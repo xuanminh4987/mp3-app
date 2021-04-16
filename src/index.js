@@ -102,5 +102,5 @@ app.get("*", (req, res) => {
 });
 
 server.listen(port, () => {
-  console.log(this.address().port, app.settings.env);
+  console.log(port);
 });

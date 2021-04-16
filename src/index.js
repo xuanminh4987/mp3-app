@@ -3,6 +3,7 @@ const app = express();
 const http = require("http");
 const server = http.createServer(app);
 const port = process.env.PORT || 3001;
+const host = "0.0.0.0";
 
 const path = require("path");
 const cors = require("cors");
@@ -101,6 +102,6 @@ app.get("*", (req, res) => {
   res.send("404 NOT FOUND!");
 });
 
-server.listen(port, () => {
+server.listen(port, host, () => {
   console.log(port);
 });

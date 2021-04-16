@@ -1,4 +1,4 @@
-const zingAPI = require("zingmp3-api");
+const zingAPI = require("zingmp3.vn-api");
 
 module.exports.getHub = async (req, res) => {
   const hub = await zingAPI.getHub();

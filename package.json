@@ -18,7 +18,7 @@
     "mongoose": "^5.12.3",
     "node-fetch": "^2.6.1",
     "socket.io": "^4.0.1",
-    "zingmp3-api": "^1.0.4"
+    "zingmp3.vn-api": "^1.0.4"
   },
   "devDependencies": {
     "nodemon": "^2.0.7"

@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const http = require("http");
 const server = http.createServer(app);
-const port = 3001;
+const port = process.env.PORT || 3001;
 
 const path = require("path");
 const cors = require("cors");
@@ -102,5 +102,5 @@ app.get("*", (req, res) => {
 });
 
 server.listen(port, () => {
-  console.log(`http://localhost:${port}/`);
+  console.log(this.address().port, app.settings.env);
 });
